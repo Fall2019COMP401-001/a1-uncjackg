@@ -9,7 +9,7 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		
 		int numCustomers = scan.nextInt();
-		String[] customers = new String[numCustomers];
+		//String[] customers = new String[numCustomers];
 
 		for (int i=0; i<numCustomers; i++) {
 			char first = scan.next().charAt(0);
@@ -27,13 +27,13 @@ public class A1Novice {
 				total += price * numItems;
 			}
 			
-			customers[i] = first + ". " + lastName + ": " + 
-					String.format("%.2f", total);
+			System.out.println(first + ". " + lastName + ": " + 
+					String.format("%.2f", total));
 		}
 		
-		for (int i=0; i<numCustomers; i++) {
+		/*for (int i=0; i<numCustomers; i++) {
 			System.out.println(customers[i]);
-		}
+		}*/
 		scan.close();
 	}
 }
