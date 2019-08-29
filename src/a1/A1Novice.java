@@ -9,7 +9,6 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		
 		int numCustomers = scan.nextInt();
-		//String[] customers = new String[numCustomers];
 
 		for (int i=0; i<numCustomers; i++) {
 			char first = scan.next().charAt(0);
@@ -17,7 +16,7 @@ public class A1Novice {
 			
 			int count = scan.nextInt();
 			
-			double total = 0.00;
+			double total = 0.0;
 			
 			for (int j=0; j<count; j++) {
 				int numItems = scan.nextInt();
@@ -31,9 +30,6 @@ public class A1Novice {
 					String.format("%.2f", total));
 		}
 		
-		/*for (int i=0; i<numCustomers; i++) {
-			System.out.println(customers[i]);
-		}*/
 		scan.close();
 	}
 }
